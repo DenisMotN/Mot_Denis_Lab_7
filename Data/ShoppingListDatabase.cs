@@ -96,7 +96,14 @@ namespace Mot_Denis_Lab_7.Data
                 return _database.InsertAsync(shop);
             }
         }
-
+        public Task<int> DeleteListProductAsync(ListProduct listp)
+        {
+            return _database.DeleteAsync(listp);
+        }
+        public Task<List<ListProduct>> GetListProducts()
+        {
+            return _database.QueryAsync<ListProduct>("select * from ListProduct");
+        }
 
     }
 }

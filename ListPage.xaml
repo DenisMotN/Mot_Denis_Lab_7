@@ -15,8 +15,8 @@
                     
                 </Editor.Behaviors>
             </Editor>
-
-                <Grid>
+            <Picker x:Name="ShopPicker" Title="Enter Shop Name"/>
+            <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
@@ -38,7 +38,8 @@
             </ListView>
             <Button Text="Add/Choose Item to buy" MaximumWidthRequest="300"
 Clicked="OnChooseButtonClicked"/>
-            
+            <Button Text="Delete Item" MaximumWidthRequest="300"
+Clicked="OnDeleteItemButtonClicked"/>
 
         </StackLayout>    </ContentPage.Content>
 </ContentPage>
